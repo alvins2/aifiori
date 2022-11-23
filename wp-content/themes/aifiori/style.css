@@ -1,0 +1,180 @@
+/*
+Theme Name: Aifiori
+Theme URI: https://orphmedia.com/
+Author: orphmedia, LLC
+Author URI: https://orphmedia.com/
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aifiori
+Tags: 
+*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'futura-pt-light';
+    src: url('assets/fonts/futura_light_bt.woff2') format('woff2'),
+         url('assets/fonts/futura_light_bt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futurabook';
+    src: url('assets/fonts/futura_book_font.woff2') format('woff2'),
+         url('assets/fonts/futura_book_font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'didotregular';
+    src: url('assets/fonts/didot_regular.woff2') format('woff2'),
+         url('assets/fonts/didot_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-size: 16px;
+	color: #000;
+}
+
+
+*{line-height: normal;}
+h1, h2, h3, h4, h5, h6, p, a{}
+p {margin-bottom: 15px;}
+a{outline: none;}
+a:hover, a:focus{outline: none;}
+button,
+button:focus{outline: none;}
+br{line-height: 0;}
+p{
+	font-family: 'futura-pt-light';
+    font-size: 24px;
+	line-height: 40px;
+}
+h2{
+    font-family: 'didotregular'; 
+}
+/*<============== css start ==============>*/
+.aboutus_main h2{
+	font-family: 'didotregular';
+	font-size: 60px;
+	line-height: 40px;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+.aboutus_main p{
+    font-size: 24px;
+    line-height: 40px;
+    font-family: 'futura-pt-light';
+    max-width: 889px;
+    margin: 0 auto;
+}
+.white_text_color{
+    color:#fff;
+}
+.indulge_main_right h2{
+    font-size: 70px;
+    margin-bottom: 100px;
+    line-height: 40px;
+}
+.indulge_main_right p{
+    padding: 0 100px;
+}
+.reserve_main h2{
+    font-size: 70px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+.reserve_main p{
+    max-width: 852px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hours_section .wpb_text_column {
+    margin-bottom: 18px;
+}
+.hours_section .wpb_text_column p{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.addreess_section > .vc_column-inner {
+    background-color: #000;
+    max-width: 544px;
+    margin: 0 auto;
+    color: #FFF;
+    padding: 40px 0;
+}
+.hours_section h4, .addreess_section h4{
+    margin-bottom: 20px ;
+    font-family: 'didotregular';
+    text-transform: uppercase;
+}
+.addreess_section p {
+    font-size: 22px;
+    margin-bottom: 5px;
+    line-height: 32px;
+}
+.addreess_section p a{
+    color: #fff;
+}
+.addreess_section h4{
+    margin-bottom: 30px;
+}
+.link_heading{
+    margin-bottom: 0 !important;
+}
+.aboutus_main{
+    margin-bottom: 75px;
+}
+.viewmenu_btn a{
+    color: #000 !important;
+    margin-top: 95px !important;
+    background-color: #fff !important;
+}
+.viewmenu_btn a, .reservations_btn a{
+    font-family: 'futurabook' !important;
+    font-size: 24px !important;
+    background-image: none !important;
+    width: 300px !important;
+    border: 0 !important;
+    text-transform: uppercase !important;
+}
+.reservations_btn a{
+    color: #fff !important;
+    background-color: #000 !important;
+    margin-bottom: 40px !important;
+}
+.viewmenu_btn a:hover, .reservations_btn a:hover{
+    opacity: 0.8 !important;
+}
+.viewmenu_btn.bt_border a{
+    border: 1px solid #000 !important;
+}
+.indulge_main{
+    margin-bottom: 84px;
+}
+.bannerimages{
+    margin-bottom: 84px;
+}
+.hoursmain_row {
+    margin-top: 10px;
+    margin-bottom: 84px;
+}
+@media(min-width: 1600px){
+    .container{
+        max-width: 1500px;
+    }
+}
+@media(max-width: 575px){
+    .page-banner img {
+        height: 100vh;
+        object-fit: cover;
+    }
+}

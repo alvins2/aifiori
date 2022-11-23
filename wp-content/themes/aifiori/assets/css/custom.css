@@ -1,0 +1,62 @@
+a:hover{
+	text-decoration: none;
+}
+.top_header {
+	position: relative;
+}
+.header-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.main_navbar{
+	top: 30% !important;
+}
+.header-address p{
+	padding-top: 15px;
+	font-family: 'futuramedium';
+	font-size: 12px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+.navbar{
+	display: flex;
+	flex-direction: row-reverse;
+}
+#collapsibleNavbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+#collapsibleNavbar ul li a{
+	font-family: 'futurabook';
+	font-size: 18px;
+	line-height: 40px;
+	color: #fff;
+}
+.site-footer{
+	background-color: #000;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0px 50px 0px;
+}
+.site-footer p{
+	margin-bottom: 0px !important;
+	font-family: 'futurabook';
+}
+
+/* ----------------------media qurey----------------------------------- */
+
+@media screen and (min-width: 767px) {
+  .header-menu {
+	top: 20%;
+	}
+}
+
+/* -------------------------------------moblie view--------------------- */
+
+
+
