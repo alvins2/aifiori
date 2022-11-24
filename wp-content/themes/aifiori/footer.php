@@ -62,7 +62,7 @@
         </div>
         <div class="footer_bottom ">
             <div class="container">
-            	<div class="row">
+            	<div class="row copy_text">
                     <div class="col-md-12">
                         <?php if($theme_options['copy-right-text'] != ''){?>
                         <div class="copy-right">

@@ -37,24 +37,32 @@ global $theme_options;
     <div class="header-container">
 		<div class="header-address">
 			<div class="promotext">
-				<p>400 5TH AVENUE 2ND LEVEL • THE LANGHAM NYC, NEW YORK CITY • NY 10018 • 212.613.8660</p>
+				<?php if($theme_options['header-address'] != ''){?>
+					<p><?php echo $theme_options['header-address'];?><a href="https://instagram.com">
+					<i class="fa-brands fa-instagram" aria-hidden="true"></i> 
+                    <?php echo $theme_options['instalink']; ?>
+                </a></p>
+				<?php }?>  
 			</div>
 			<div class="promolink">
-				<a href="#">RESERVATIONS</a>
+				<p><?php echo _e(""); ?><a href="<?php echo $theme_options['text'];?>"><?php echo $theme_options['text'];?></a></p>
 			</div>
 		</div>
 		<div class="hedcontainer container">
 			<div id="main_navbar" class="header-menu">
-				<nav class="navbar navbar-expand-lg navbar-dark">
+				<nav class="navbar navbar-expand-md navbar-dark">
 					<?php if($theme_options['header-logo'] != ''){?>
-						<a class="navbar-brand" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
+						<a class="navbar-brand desktoplogo" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
 							<img src="<?php echo $theme_options['header-logo']?>" alt="<?php echo bloginfo('name')?>"/>
 						</a>
 						<?php }?>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon menu-bar"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon close-menu"></span>
+						</button>
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
@@ -63,6 +71,12 @@ global $theme_options;
 							'menu_class' => 'navbar-nav mr-auto',
 						) );
 						?>
+						<?php if($theme_options['header-logo'] != ''){?>
+						<a class="navbar-brand-mobile menuopenlogo" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
+							<img src="<?php echo $theme_options['header-logo']?>" alt="<?php echo bloginfo('name')?>"/>
+						</a>
+						<?php }?>
+						
 					</div>
 				</nav>
 			</div>
@@ -73,8 +87,15 @@ global $theme_options;
         if (has_post_thumbnail()) {
 	        the_post_thumbnail('full', array('class' => 'img-fluid'));
 	    }else{
-            echo '<img class="img-fluid" src="'.get_template_directory_uri().'/assets/images/no-page-banner.jpg" alt="Image">';
+            echo '<img class="img-fluid mainbanner" src="'.get_template_directory_uri().'/assets/images/no-page-banner.jpg" alt="Image">';
         }
         ?>
+		<div class="logomobile">
+		<?php if($theme_options['header-logo'] != ''){?>
+						<a class="navbar-brand-mobile" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
+							<img src="<?php echo $theme_options['header-logo']?>" alt="<?php echo bloginfo('name')?>"/>
+						</a>
+						<?php }?>
+		</div>
     </div>
 </header>

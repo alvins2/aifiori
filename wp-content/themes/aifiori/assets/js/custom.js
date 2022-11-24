@@ -21,7 +21,17 @@ jQuery(document).ready(function () {
       focusOnSelect: true
    });
 });
-
+jQuery(document).ready(function () {
+   jQuery('.navbar-toggler').click(function() {
+      jQuery('body').toggleClass('openmenu');
+      jQuery('#content').toggle();
+   });
+});
+jQuery(document).ready(function($) { 
+   jQuery('img').hover(function() { 
+       jQuery(this).removeAttr('title');
+   }); 
+});
 // jQuery(document).ready(function() {  
 
 //   //Enable swiping...
