@@ -34,37 +34,39 @@ global $theme_options;
     }
 ?>
 <header id="header" <?php echo $loop_count == 1 ? 'class="top_header"' : 'class="top_header no_banner"'; ?>>
-    <div class="container header-container">
-		<div class="row header-address">
-			<div class="col-9">
-<!-- 						<h5><?php echo _e("Address"); ?></h5> -->
-                        <?php if($theme_options['header-address'] != ''){?>
-                            <p><?php echo $theme_options['header-address'];?></p>
-                        <?php }?>  
+    <div class="header-container">
+		<div class="header-address">
+			<div class="promotext">
+				<p>400 5TH AVENUE 2ND LEVEL • THE LANGHAM NYC, NEW YORK CITY • NY 10018 • 212.613.8660</p>
+			</div>
+			<div class="promolink">
+				<a href="#">RESERVATIONS</a>
 			</div>
 		</div>
-        <div id="main_navbar" class="header-menu">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-				<?php if($theme_options['header-logo'] != ''){?>
-                    <a class="navbar-brand" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
-                        <img src="<?php echo $theme_options['header-logo']?>" alt="<?php echo bloginfo('name')?>"/>
-                    </a>
-                    <?php }?>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'primary',
-                        'depth' => 2,
-                        'container' => false,
-                        'menu_class' => 'navbar-nav mr-auto',
-                    ) );
-                	?>
-                </div>
-            </nav>
-    	</div>
+		<div class="hedcontainer container">
+			<div id="main_navbar" class="header-menu">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<?php if($theme_options['header-logo'] != ''){?>
+						<a class="navbar-brand" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
+							<img src="<?php echo $theme_options['header-logo']?>" alt="<?php echo bloginfo('name')?>"/>
+						</a>
+						<?php }?>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'primary',
+							'depth' => 2,
+							'container' => false,
+							'menu_class' => 'navbar-nav mr-auto',
+						) );
+						?>
+					</div>
+				</nav>
+			</div>
+		</div>
     </div>
     <div class="page-banner">
         <?php

@@ -4,16 +4,39 @@ a:hover{
 .top_header {
 	position: relative;
 }
-.header-container {
+.hedcontainer{
 	position: absolute;
-	left: 0;
-	right: 0;
+    width: 100%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
-.main_navbar{
-	top: 30% !important;
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.header-address {
+    position: relative;
+	align-items: center;
+}
+.promolink{
+	position: absolute;
+	right: 30px;
+	top: 15px;
+}
+.promolink a{
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+	padding-right: 100px;
+	font-family: 'futurabook';
 }
 .header-address p{
 	padding-top: 15px;
+	margin-bottom: 0px !important;
 	font-family: 'futuramedium';
 	font-size: 12px;
 	text-align: center;
@@ -49,14 +72,21 @@ a:hover{
 }
 
 /* ----------------------media qurey----------------------------------- */
-
-@media screen and (min-width: 767px) {
-  .header-menu {
-	top: 20%;
+@media screen and (max-width: 993px) {
+	.promolink{
+		right: -40px;
 	}
-}
+  }
+
 
 /* -------------------------------------moblie view--------------------- */
-
+@media screen and (max-width: 767px) {
+	.promotext{
+		display: none;
+	}
+	.hedcontainer{
+		top: 10%;
+	}
+}
 
 
