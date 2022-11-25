@@ -38,9 +38,9 @@ global $theme_options;
 		<div class="header-address">
 			<div class="promotext">
 				<?php if($theme_options['header-address'] != ''){?>
-					<p><?php echo $theme_options['header-address'];?><a href="https://instagram.com">
+					<p><?php echo $theme_options['header-address'];?><a href="<?php echo $theme_options['instalink']; ?>" target="_blank">
 					<i class="fa-brands fa-instagram" aria-hidden="true"></i> 
-                    <?php echo $theme_options['instalink']; ?>
+                    
                 </a></p>
 				<?php }?>  
 			</div>

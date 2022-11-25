@@ -224,6 +224,9 @@ h4.vc_custom_heading.link_heading a{
     margin-top: 140px;
     margin-bottom: 90px;
 }
+#collapsibleNavbar ul li a:hover{
+    opacity: 0.9;
+}
 @media(min-width: 1600px){
     .container{
         max-width: 1500px;
@@ -394,10 +397,14 @@ h4.vc_custom_heading.link_heading a{
         font-size: 30px;
     }
     .reserve_main p {
-        font-size: 24px;
-        line-height: 42px;
+        font-size: 21px;
+        line-height: 37px;
     }
     .addreess_section p:nth-child(4) {
         margin-top: 40px;
+    }
+    ol.vc_carousel-indicators li{
+        width: 15px !important;
+        height: 15px !important;
     }
 }

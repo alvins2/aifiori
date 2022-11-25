@@ -13,9 +13,15 @@
 	<footer class="site-footer" role="contentinfo">
 		<div class="footer_top">
             <div class="container">
-                <div class="row">
+                <div class="row footer-logo-monile">
                     <div class="col-md-6">
                         <div class="footer_logos">
+                        <?php if($theme_options['footer-logo'] != ''){?>
+						<a class="navbar-brand-mobile footer_logo" href="<?php echo site_url()?>" title="<?php echo bloginfo('name')?>">
+							<img src="<?php echo $theme_options['footer-logo']?>" alt="<?php echo bloginfo('name')?>"/>
+						</a>
+						<?php }?>
+
                             <?php if($theme_options['footer-logo-title'] != ''){?>
                                 <h5 class="titleh4"><?php echo $theme_options['footer-logo-title'];?></h5>
                             <?php }?>

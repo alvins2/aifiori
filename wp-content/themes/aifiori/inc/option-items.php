@@ -51,12 +51,12 @@ $option_items[]= array(
 					'desc'=>'You can manage footer settings from here',
 				 );
 
-// $option_items[]= array(
-// 					'type'=>'text',
-// 					'name'=>'footer-logo-title',
-// 					'title'=>'Logos Title',
-// 					'desc'=>'You can manage footer Logos Title from here',
-// 				 );	
+$option_items[]= array(
+					'type'=>'image',
+					'name'=>'footer-logo',
+					'title'=>'Logo',
+					'desc'=>'You can manage footer logo from here',
+				 );	
 
 // $option_items[]= array(
 // 					'type'=>'text',

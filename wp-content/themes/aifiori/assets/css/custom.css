@@ -25,7 +25,7 @@ a:hover{
 .promolink{
 	position: absolute;
 	right: 30px;
-	top: 5px;
+	top: 1px;
 }
 .promolink a{
 	color: #fff;
@@ -59,6 +59,9 @@ a:hover{
 	line-height: 40px;
 	color: #fff;
 }
+#collapsibleNavbar ul li a:hover{
+	color: #cfc9c9;
+}
 .promotext a{
 	color: #fff;
 	font-size: 16px;
@@ -75,6 +78,9 @@ a:hover{
 	margin-bottom: 0px !important;
 	font-family: 'futurabook';
 }
+.footer-logo-monile{
+	display: none;
+}
 
 /* ----------------------media qurey----------------------------------- */
 @media screen and (max-width: 1200px) {
@@ -88,19 +94,13 @@ a:hover{
 		top: -1px;
 	}
   }
-  /* @media screen and (max-width: 767px) {
-	.header-address p{
-		text-align: left;
-		padding-left: 20px;
-		font-size: 10px;
-	}
-} */
 
 
 /* -------------------------------------moblie view--------------------- */
 @media screen and (max-width: 767px) {
 	.promolink {
 		right: 20px;
+		top: 12px;
 	}
 	.promotext{
 		display: none;
@@ -139,6 +139,7 @@ a:hover{
 		left: 0%;
 		transition:left 0.3s linear;
 		text-align: center;
+		padding-top: 20px;
 	}
 	ul#menu-main-menu li a{
 		color: #000;
@@ -160,8 +161,20 @@ a:hover{
 	.navbar-dark .close-menu{
 		background-image: url(../images/close.png);
 	}
+	.menuopenlogo img{
+		max-width: 305px;
+	}
 	.footer_bottom .copy_text{
 		display: none;
+	}
+	.site-footer {
+		padding: 20px 0px 200px 0px !important;
+	}
+	.footer-logo-monile{
+		display: flex;
+	}
+	.footer_logos a img {
+		max-width: 261px;
 	}
 }
 
