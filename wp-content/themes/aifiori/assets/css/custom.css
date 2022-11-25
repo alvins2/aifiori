@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'futura-pt-light';
+    src: url('assets/fonts/futura_light_bt.woff2') format('woff2'),
+         url('assets/fonts/futura_light_bt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura-medium';
+    src: url('assets/fonts/Futura-Medium.eot');
+    src: url('assets/fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Futura-Medium.woff2') format('woff2'),
+        url('assets/fonts/Futura-Medium.woff') format('woff'),
+        url('assets/fonts/Futura-Medium.ttf') format('truetype'),
+        url('assets/fonts/Futura-Medium.svg#Futura-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'adobe-clean';
+    src: url('assets/fonts/AdobeClean-Regular.eot');
+    src: url('assets/fonts/AdobeClean-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/AdobeClean-Regular.woff2') format('woff2'),
+        url('assets/fonts/AdobeClean-Regular.woff') format('woff'),
+        url('assets/fonts/AdobeClean-Regular.ttf') format('truetype'),
+        url('assets/fonts/AdobeClean-Regular.svg#AdobeClean-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 a:hover{
 	text-decoration: none;
 }
@@ -34,14 +66,17 @@ a:hover{
 	padding-right: 100px;
 	font-family: 'futurabook';
 }
+.promolink a:hover{
+	color: #cfc9c9;
+}
 .header-address p{
 	padding: 6px 0px;
 	margin-bottom: 0px !important;
-	font-family: 'futuramedium';
 	font-size: 12px;
 	text-align: center;
 	line-height: 40px;
 	color: #fff;
+	font-family: 'Futura-medium';
 }
 .navbar{
 	display: flex;
@@ -65,7 +100,12 @@ a:hover{
 .promotext a{
 	color: #fff;
 	font-size: 16px;
-	padding-left: 5px;
+	padding-left: 10px;
+	position: relative;
+    top: 2px;
+}
+.promotext a:hover{
+	color: #cfc9c9;
 }
 .site-footer{
 	background-color: #000;
@@ -81,6 +121,85 @@ a:hover{
 .footer-logo-monile{
 	display: none;
 }
+.page-id-123 h4{
+	text-align: center;
+    font-family: 'futurabook';
+    font-size: 60px;
+    line-height: 40px;
+    color: #000;
+    padding: 30px 0px;
+}
+.menus_main h1{
+	font-size: 60px;
+	font-family: 'didotregular';
+    line-height: 40px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.menus_main .slider-for{
+	border: 1px solid #000;
+}
+.main_title{
+	margin-bottom: 50px;
+}
+.slick-next:before {
+    content: '' !important;
+    background-image: url(../images/next.png);
+    background-repeat: no-repeat;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    background-size: 20px 30px;
+    position: absolute;
+    top: 0;
+}
+.slick-next, .slick-prev{
+	z-index:99;
+}
+.slick-prev:before {
+    content: '' !important;
+    background-image: url(../images/pre.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 20px 30px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.slide-menu-left h4{
+	font-size: 60px;
+	text-align: left;
+	font-family: 'didotregular';
+    line-height: 40px;
+	color: #fff;
+	background-color: #000;
+}
+.slide-menu-left-content{
+	background-color: black;
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'futura-pt-light';
+}
+.slide-main_menu-left{
+	padding-right: 0px;
+}
+.slide-main_menu-right{
+	padding-left: 0px;
+}
+.slide-menu-left-content p{
+	margin-bottom: 30px !important;
+	line-height: 30px;
+}
+.slide-menu-left-content p:first-child{
+	display: none;
+}
+.slide-menu-right img{
+	min-height: 1390px;
+	object-fit: cover;
+}
+
 
 /* ----------------------media qurey----------------------------------- */
 @media screen and (max-width: 1200px) {
@@ -100,7 +219,7 @@ a:hover{
 @media screen and (max-width: 767px) {
 	.promolink {
 		right: 20px;
-		top: 12px;
+		top: 8px;
 	}
 	.promotext{
 		display: none;
@@ -115,8 +234,13 @@ a:hover{
 		position: unset;
 	}
 	.promolink a{
-		color: #000;
+		color: #4b4b4b;
 		padding-right: 0.75rem;
+		font-family: 'didotregular';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+
 	}
 	.navbar-brand{
 		display: none !important;
@@ -139,12 +263,14 @@ a:hover{
 		left: 0%;
 		transition:left 0.3s linear;
 		text-align: center;
-		padding-top: 20px;
+	}
+	.show .navbar-toggler{
+		padding: 20px 0px 60px 0px !important;
 	}
 	ul#menu-main-menu li a{
 		color: #000;
 		font-size: 20px;
-		line-height: 60px;
+		line-height: 52px;
 		text-transform: uppercase;
 		font-family: 'didotregular';
 	}
@@ -157,6 +283,8 @@ a:hover{
 	}
 	.navbar-dark .menu-bar{
 		background-image: url(../images/navbar.png);
+		width: 40px;
+		height: 20px;
 	}
 	.navbar-dark .close-menu{
 		background-image: url(../images/close.png);

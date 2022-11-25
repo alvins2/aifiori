@@ -7,7 +7,7 @@
  * @package Aaifiori
  */
 
-get_header(); 
+get_header();
 ?>
 
 	<?php

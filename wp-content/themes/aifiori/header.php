@@ -84,7 +84,7 @@ global $theme_options;
     </div>
     <div class="page-banner">
         <?php
-        if (has_post_thumbnail()) {
+        if (has_post_thumbnail() && !is_single()) {
 	        the_post_thumbnail('full', array('class' => 'img-fluid'));
 	    }else{
             echo '<img class="img-fluid mainbanner" src="'.get_template_directory_uri().'/assets/images/no-page-banner.jpg" alt="Image">';
