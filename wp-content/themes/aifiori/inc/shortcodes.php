@@ -78,13 +78,13 @@ ob_start();
 					<div class="slider-nav">
 						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<div class="slider-menus-content">
-								<div class="row">
+								<div class="row menu_section">
 									<div class="col-md-7 slide-main_menu-left">
 										<div class="slide-menu-left">
 											<h4><?php the_title(); echo __(' Menus');?></h4>
 										</div>
 										<div class="slide-menu-left-content">
-											<p><?php the_content(); echo __(' Menus');?></p>
+											<p><?php the_content(); echo __('');?></p>
 										</div>
 									</div>
 									<div class="col-md-5 slide-main_menu-right">
@@ -125,7 +125,7 @@ ob_start();
 				<div class="private-rooms-section">
 					<div class="private-rooms-row row">
 					<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-						<div class="col-md-6">
+						<div class="col-md-6 private-col">
 							<div class="privateRoomsBox">
 								<h4><?php the_title(); ?></h4>
 								<div class="privateRoomsImg">

@@ -76,3 +76,17 @@ function wp_new_site_scripts() {
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/assets/js/custom.js');
 }
 add_action( 'wp_enqueue_scripts', 'wp_new_site_scripts' );
+
+add_action( 'template_redirect', 'se219663_template_redirect' );
+
+function se219663_template_redirect()
+{
+  global $wp_rewrite;
+
+  if ( is_search() && ! empty ( $_GET['s'] )  )
+  {
+    $location  = site_url();
+    wp_safe_redirect( $location, 301 );
+    exit;
+  }
+}

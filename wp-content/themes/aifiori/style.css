@@ -255,8 +255,8 @@ h4.vc_custom_heading.link_heading a{
     max-width: 100%;
 }
 .privateroom_to_section, .press_section {
-    margin-top: 110px !important;
-    margin-bottom: 55px;
+    margin-top: 110px;
+    margin-bottom: 110px;
 }
 .privateroom_to_section h1, .press_section h1{
     font-size: 60px;
